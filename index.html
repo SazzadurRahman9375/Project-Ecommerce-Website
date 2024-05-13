@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline e-commerce</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <script src="scripts/index.js">
+
+    </script>
+  </head>
+  <body>
+    <nav class="menubar">
+      <span class="label"><strong>Car</strong><sub>Mart</sub></span>
+      <ul class="menu">
+          <li><a href="index.html" ><img src="./images/home.png" alt="home">   Home</a></li>
+          <li><a href="products.html"><img src="./images/product.png" alt="product">Products</a></li>
+          <li><a href="admin.html" id="admin"><img src="./images/admin.png" alt="admin" >   Admin</a></li>
+          <li><a href="register.html" id="register"><img src="./images/register.png" alt="register">Register</a></li>
+          <li><a href="cart.html" id="cart" ><img src="./images/cart.png" alt="cart" >Cart</a></li>
+          <li><a href="login.html" id="login"><img src="./images/login2.png" alt="login">Login</a></li>
+      </ul>
+  
+  </nav>
+  
+
+  <main class="container">
+
+
+    <div>
+      <button type="button" class="button" onclick="Show()" ondblclick="Hide()">My Information</button>
+    
+
+    
+      <button type="button" class="button" onclick="projectShow()" ondblclick="projectHide()">Project Information</button>
+    </div>
+
+
+  
+  <div id="infodiv">
+
+
+    
+      <div class="info" id="info">
+        <h1>My Info</h1>
+        <h3>Name:Sazzadur Rahman</h3>
+        <h3>ID:1279378</h3>
+        <h3>Round:56</h3>
+      </div>
+
+  
+      <div class="info" id="projectinfo">
+        <h1 style="text-align: center;margin-right: 10px;">Project Info</h1>
+        <h3>This project is based on three storage systems of the web browser.
+          Indexeddb has been used for products information.
+          Session storage has been used for login information.
+          Local storage has been used for Register information</h3>
+      </div>
+
+  </div>
+    </main>
+  </body>
+</html>

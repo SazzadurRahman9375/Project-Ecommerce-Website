@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline e-commerce</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/admin.js">
+     
+    </script>
+  </head>
+  <body>
+    <nav class="menubar">
+      <span class="label"><strong>Car</strong><sub>Mart</sub></span>
+      <ul class="menu">
+          <li><a href="index.html" ><img src="./images/home.png" alt="home">Home</a></li>
+          <li><a href="products.html"><img src="./images/product.png" alt="product">Products</a></li>
+          <li><a href="admin.html" id="admin"><img src="./images/admin.png" alt="admin" >Admin</a></li>
+          <li><a href="register.html" id="register"><img src="./images/register.png" alt="register">Register</a></li>
+          <li><a href="login.html" id="login"><img src="./images/login2.png" alt="login">Login</a></li>
+      </ul>
+  
+  </nav>
+
+  <main class="container">
+      <div class="co1-1">
+        <div>
+          <h3>Products</h3>
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>description</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div>
+          <h3>New Product</h3>
+          <form id="frm-product">
+            <div class="col1">
+              <input placeholder="name..." id="name" class="input" required />
+            </div>
+            <div class="col1">
+              <input
+                type="number"
+                placeholder="price..."
+                id="price"
+                class="input"
+                required
+              />
+            </div>
+            <div class="col1">
+              <input
+                placeholder="description..."
+                id="description"
+                class="input"
+                required
+              />
+            </div>
+            <div class="col1">
+              <input
+                type="file"
+                placeholder="description..."
+                id="picture"
+                class="input"
+                required
+              />
+            </div>
+            <div class="col1" style="text-align: right" id="save-reset">
+              <button
+                type="reset"
+                class="btn-primary"
+                type="button"
+                id="reset-btn"
+              >
+                Reset
+              </button>
+              <button class="btn-primary" type="button" id="save-btn">
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
